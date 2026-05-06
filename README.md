@@ -1,1 +1,1 @@
-# cure-witout-medicines
+# cure-without-medicines
