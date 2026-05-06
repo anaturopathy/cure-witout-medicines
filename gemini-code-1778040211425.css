@@ -1,0 +1,151 @@
+:root {
+    --primary-blue: #1e2a78;
+    --accent-yellow: #ffeb3b;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-yellow);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 3rem 0;
+    background: #f4f4f4;
+}
+
+.hero h2 {
+    text-align: center;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero h2 span {
+    display: block;
+    font-size: 1.2rem;
+    color: #c62828; /* Redish tone for the degree */
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.caption {
+    font-size: 0.8rem;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.specialties ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specialties li {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-blue);
+}
+
+.specialties i {
+    color: #c62828;
+    margin-right: 10px;
+}
+
+.hindi-note {
+    background: #c62828;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Info Bar */
+.info-bar {
+    background: #e64a19;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background: var(--accent-yellow);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.phone {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-blue);
+    display: block;
+}
+
+.hindi-call {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.address {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+    header h1 { font-size: 2rem; }
+}
